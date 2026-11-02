@@ -1,7 +1,14 @@
-﻿# 神之領域 2.12 遊戲說明
+# 神之領域 日版資料庫
 
-台版 2.12 私服的遊戲說明，依等級整理：等級指南、職業、技能、地圖、任務、怪物、物品、等級限制、能力換算與經驗。
+日版 Asgard wiki（wikiwiki.jp/asgard）玩家整理的資料，翻成繁體中文的靜態網站。
+內容著作權屬原作者，僅供參考。
 
-直接開啟 `index.html` 就能瀏覽，不需要安裝任何東西。
+## 放到 GitHub Pages
+1. 在 GitHub 建一個新的 repository（公開）。
+2. 把這個資料夾裡的全部檔案上傳（包含 `.nojekyll`）。
+3. repository 的 Settings → Pages → Source 選 `Deploy from a branch`，Branch 選 `main`、資料夾 `/ (root)`，按 Save。
+4. 等 1～2 分鐘，網址會是 `https://<你的帳號>.github.io/<repository 名稱>/`。
 
-本頁為玩家自製的遊戲介紹，遊戲名稱、地圖圖片等權利屬於原遊戲公司。
+## 說明
+- 首頁可以搜尋頁名（中文或日文）。搜尋要放到網站上才能用，直接雙擊打開 index.html 時瀏覽器會擋。
+- 灰色斜體的字＝還沒翻譯的日文原文。

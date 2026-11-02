@@ -1,0 +1,25 @@
+:root{--bg:#f7f5f0;--fg:#222;--mut:#6b6b6b;--card:#fff;--line:#ddd6c8;--acc:#8a4b12;--head:#3b2a1a;--th:#efe9dc}
+@media (prefers-color-scheme:dark){:root{--bg:#1b1916;--fg:#e8e4dc;--mut:#9a948a;--card:#25221e;--line:#3d3830;--acc:#e0a060;--head:#120f0c;--th:#2c2823}}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font:16px/1.65 "Noto Sans TC","Microsoft JhengHei",system-ui,sans-serif}
+header{position:sticky;top:0;z-index:2;display:flex;gap:12px;align-items:center;flex-wrap:wrap;padding:10px 16px;background:var(--head)}
+header .home{color:#f3d9a8;font-weight:700;text-decoration:none;font-size:18px}
+.sf{flex:1;min-width:180px;max-width:420px;margin-left:auto}
+.sf input{width:100%;padding:7px 10px;border-radius:6px;border:1px solid #6b5640;background:#fffaf0;color:#222;font-size:15px}
+main{max-width:1100px;margin:0 auto;padding:16px}
+h1{font-size:24px;margin:8px 0 4px}
+a{color:var(--acc)}
+.desc,.orig,.crumb{color:var(--mut);font-size:14px}
+.orig{margin-bottom:12px}
+.cards{display:grid;grid-template-columns:repeat(auto-fill,minmax(240px,1fr));gap:12px;margin-top:16px}
+.card{display:flex;flex-direction:column;gap:4px;padding:14px;background:var(--card);border:1px solid var(--line);border-radius:10px;text-decoration:none;color:var(--fg)}
+.card b{font-size:18px;color:var(--acc)}.card span{font-size:14px;color:var(--mut)}.card i{font-style:normal;font-size:13px;color:var(--mut)}
+.list{columns:3 260px;padding-left:18px}.list li{break-inside:avoid;margin:2px 0}
+.tw{overflow-x:auto;margin:10px 0}
+table{border-collapse:collapse;background:var(--card);font-size:14px}
+td{border:1px solid var(--line);padding:4px 8px;vertical-align:top;min-width:2em}
+tr:first-child td{background:var(--th);font-weight:600}
+p{margin:6px 0}
+.jp{color:var(--mut);font-style:italic}
+#results ul{padding-left:18px}#results .cat{color:var(--mut);font-size:13px;margin-left:6px}
+footer{max-width:1100px;margin:24px auto;padding:12px 16px;color:var(--mut);font-size:13px;border-top:1px solid var(--line)}
