@@ -157,3 +157,6 @@ footer{max-width:1140px;margin:30px auto 0;padding:16px;color:var(--mut);font-si
   .world{grid-template-columns:1fr}
   h1{font-size:23px}
 }
+/* 怪物數值表補上的值：虛線底＝取自日版 wiki 別頁；「本服」＝本伺服器設定 */
+span.fw{border-bottom:1px dashed currentColor}
+span.fs::after{content:"本服";margin-left:.25em;padding:0 .25em;font-size:.7em;border-radius:3px;background:#e9dcc0;color:#7a5a2a;vertical-align:.1em}
