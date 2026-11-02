@@ -17,7 +17,7 @@
     hit.slice(0, 300).forEach(function (p) {
       var li = document.createElement("li"), a = document.createElement("a"), s = document.createElement("span");
       a.href = "p/" + p[0] + ".html"; a.textContent = p[1];
-      s.className = "cat"; s.textContent = p[3] + "｜" + p[2];
+      s.className = "cat"; s.textContent = p[3];
       li.appendChild(a); li.appendChild(s); ul.appendChild(li);
     });
     out.appendChild(ul);
