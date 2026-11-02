@@ -106,7 +106,10 @@ tr:hover td{background:var(--gold-s)}
   background:linear-gradient(180deg,#a8401f,#7a2412);box-shadow:var(--shadow)}
 .tools a:hover{filter:brightness(1.12);color:#fff}
 .flt{width:100%;max-width:420px;padding:8px 12px;margin:0 0 8px;border-radius:20px;border:1px solid var(--line);background:var(--card);color:var(--fg);font-size:15px}
-.ser b{color:var(--fg);margin-right:4px}.ser a{display:inline-block;min-width:1.6em;text-align:center;margin:0 2px}
+.ser>a{margin-right:6px}
+.ser span a{display:inline-block;min-width:1.8em;padding:0 5px;margin:1px 2px;text-align:center;font-size:13px;line-height:1.6;
+  border:1px solid var(--line);border-radius:6px;background:var(--bg);text-decoration:none}
+.ser span a:hover{border-color:var(--gold);background:var(--gold-s)}
 .mcards{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:12px}
 .mcard{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:12px 14px;box-shadow:var(--shadow)}
 .mh{display:flex;justify-content:space-between;gap:8px;align-items:baseline;margin-bottom:6px;font-weight:700}
