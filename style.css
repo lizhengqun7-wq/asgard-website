@@ -95,13 +95,18 @@ tr:hover td{background:var(--gold-s)}
 /* 裝備：一件一張表，能力、備註併在表裡 */
 .it{border-left:4px solid var(--gold)}
 .it table{width:100%;min-width:0}
-.it tr:not(.ab):not(.nt) td:first-child{min-width:7em}
+.it tr:not(.ab):not(.nt) td:first-child{min-width:9em;white-space:nowrap}
+td:has(>img.ic){white-space:nowrap}
 .it tr.ab td,.it tr.nt td{white-space:normal;min-width:0}
 .it tr.ab td:first-child,.it tr.nt td:first-child{width:4.5em;white-space:nowrap;font-weight:700;color:var(--acc)}
 .it tr.ab td{background:var(--gold-s)!important;font-weight:700}
 .it tr.nt td{background:var(--card)!important;color:var(--mut)}
 .it small.src{font-weight:400;color:var(--mut);margin-left:4px}
 .mut{color:var(--mut);font-weight:400}
+img.ic{width:30px;height:30px;object-fit:contain;vertical-align:middle;margin:-4px 6px -4px 0;
+  background:radial-gradient(circle,#4a3020 0%,#2b1a10 100%);border:1px solid var(--gold);border-radius:6px;image-rendering:pixelated}
+img.ic.gen{opacity:.45;filter:grayscale(.6)}
+img.ic.mon{width:auto;height:auto;max-width:60px;max-height:56px;background:none;border:0;margin:0 8px 0 0;image-rendering:auto}
 
 /* 每頁上方的遊戲圖片橫幅 */
 .ban{height:130px;border-radius:12px 12px 0 0;overflow:hidden;border:2px solid var(--gold);border-bottom:0;margin-bottom:-2px}
