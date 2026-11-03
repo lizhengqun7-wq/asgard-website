@@ -160,3 +160,8 @@ footer{max-width:1140px;margin:30px auto 0;padding:16px;color:var(--mut);font-si
 /* 怪物數值表補上的值：虛線底＝取自日版 wiki 別頁；「本服」＝本伺服器設定 */
 span.fw{border-bottom:1px dashed currentColor}
 span.fs::after{content:"本服";margin-left:.25em;padding:0 .25em;font-size:.7em;border-radius:3px;background:#e9dcc0;color:#7a5a2a;vertical-align:.1em}
+/* 本伺服器的道具功能、盒子內容（build_site fnrow／b\*.html） */
+tr.fn td{white-space:normal;min-width:0;background:#eef3e6!important}
+tr.fn td:first-child{width:4.5em;white-space:nowrap;font-weight:700;color:#4d6b2a}
+table.q td{white-space:normal}
+small.src{color:var(--mut)}
