@@ -209,3 +209,19 @@ table.dq td{white-space:normal;vertical-align:top}
 table.dq td:first-child b{display:inline}
 ul.dm li img.ic{max-width:36px;max-height:36px}
 table.q.dq td:first-child,table.q.dq td:has(>img.ic){white-space:normal}
+
+/* 依等級看怪物：一隻怪一張卡片 */
+.mcs{display:grid;grid-template-columns:repeat(auto-fill,minmax(320px,1fr));gap:10px}
+.mc{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.mch{display:flex;align-items:center;flex-wrap:wrap;gap:6px;margin-bottom:4px}
+.mch b{font-size:16px}
+.mch .lv{background:var(--bg2);border-radius:6px;padding:0 6px;font-size:13px}
+.mch .hp{color:var(--mut);font-size:13px}
+.mch img.ic{max-width:40px;max-height:40px}
+.mcr{display:flex;gap:8px;font-size:14px;padding:3px 0;border-top:1px dashed var(--line)}
+.mcr em{font-style:normal;color:var(--mut);white-space:nowrap;font-size:13px;min-width:4.5em}
+.dch{display:flex;flex-wrap:wrap;gap:4px 10px}
+.dch span{display:inline-flex;align-items:center;gap:2px}
+.dch img.ic{max-width:24px;max-height:24px}
+.dch .more{color:var(--mut);font-size:12px}
+@media(max-width:520px){.mcs{grid-template-columns:1fr}}
