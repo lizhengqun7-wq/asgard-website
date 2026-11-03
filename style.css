@@ -240,3 +240,11 @@ ul.mlist>li{border-top:1px dashed var(--line);padding:4px 0}
 ul.mlist .mch{margin:0}
 ul.mlist .mch b{font-size:14px}
 ul.mlist .dch{font-size:13px;margin-left:4px}
+
+/* 地圖頁上方：區域選單、樓層列（日版 wiki 的跳頁選單） */
+nav.areanav{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 10px;margin:10px 0;display:grid;gap:6px}
+nav.areanav .an,nav.areanav .fl{display:flex;flex-wrap:wrap;gap:4px 6px;align-items:center}
+nav.areanav a,nav.areanav span{padding:2px 8px;border-radius:6px;background:var(--bg2);font-size:13px;text-decoration:none;color:var(--fg)}
+nav.areanav a.cur{background:#7a2a14;color:#fff}
+nav.areanav .fl b{margin-right:4px;font-size:14px}
+nav.areanav .fl a{min-width:1.6em;text-align:center}
