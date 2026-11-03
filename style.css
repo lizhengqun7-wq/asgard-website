@@ -29,6 +29,7 @@ header{position:sticky;top:0;z-index:3;display:flex;gap:14px;align-items:center;
 .cats{position:sticky;top:56px;z-index:4;display:flex;flex-wrap:wrap;gap:6px;padding:8px 16px;
   background:var(--card);border-bottom:1px solid var(--line)}
 .cats details{position:relative}
+.cats details[open]::after{content:"";position:absolute;left:0;right:0;top:100%;height:8px}  /* 按鈕和清單中間的空隙也算在選單裡，滑鼠往下移才不會關掉 */
 .cats summary{list-style:none;cursor:pointer;padding:4px 14px;border:1px solid var(--line);border-radius:14px;font-size:14px;
   color:var(--fg);background:var(--bg);user-select:none}
 .cats summary::-webkit-details-marker{display:none}
@@ -92,7 +93,7 @@ h2.sec::after{content:"";flex:1;height:1px;background:linear-gradient(90deg,var(
 .list{columns:3 250px;column-gap:24px;padding:14px 18px 14px 34px;margin:0;background:var(--card);border:1px solid var(--line);border-radius:10px}
 .list li{break-inside:avoid;margin:3px 0}
 .list a{text-decoration:none}.list a:hover{text-decoration:underline}
-.town{margin:0 0 14px}.town img{max-width:100%;height:auto;border-radius:10px;border:2px solid var(--gold);box-shadow:var(--shadow)}
+.town{margin:0 0 14px}.town img{display:block;width:100%;max-width:720px;height:auto;aspect-ratio:4/3;object-fit:contain;background:#16100b;border-radius:10px;border:2px solid var(--gold);box-shadow:var(--shadow)}
 article{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:14px 18px;box-shadow:var(--shadow)}
 article>p{margin:6px 0}
 .tw{overflow-x:auto;margin:12px 0;border-radius:8px;border:1px solid var(--line)}
@@ -119,7 +120,7 @@ img.ic{width:30px;height:30px;object-fit:contain;vertical-align:middle;margin:-4
 p.npch{display:flex;align-items:flex-end;gap:6px;margin:16px 0 4px;font-size:17px;color:var(--acc)}
 p.npch span{font-size:14px;color:var(--mut)}
 .town figcaption{font-size:13px;color:var(--mut);margin-top:4px}
-img.mapshot{display:block;width:100%;max-width:640px;height:auto;border-radius:10px;border:2px solid var(--gold);box-shadow:var(--shadow)}
+img.mapshot{display:block;width:100%;max-width:720px;height:auto;aspect-ratio:4/3;object-fit:contain;background:#16100b;border-radius:10px;border:2px solid var(--gold);box-shadow:var(--shadow)}
 img.mthumb{display:block;width:100%;aspect-ratio:16/7;object-fit:cover;border-radius:8px;margin-bottom:8px;border:1px solid var(--line)}
 img.ic.gen{opacity:.45;filter:grayscale(.6)}
 img.ic.mon{width:auto;height:auto;max-width:60px;max-height:56px;background:none;border:0;margin:0 8px 0 0;image-rendering:auto}
@@ -176,3 +177,18 @@ tr.fn td{white-space:normal;min-width:0;background:#eef3e6!important}
 tr.fn td:first-child{width:4.5em;white-space:nowrap;font-weight:700;color:#4d6b2a}
 table.q td{white-space:normal}
 small.src{color:var(--mut)}
+
+/* 日版原網頁的段落結構（layout()）：小標題、清單、目錄 */
+article>h2.sec:first-child,article>nav.toc+h2.sec{margin-top:10px}
+h3.sub{font-size:18px;margin:22px 0 8px;padding-left:10px;border-left:4px solid var(--gold);color:var(--head2)}
+h4.sub{font-size:16px;margin:16px 0 6px;color:var(--acc)}
+@media (prefers-color-scheme:dark){h3.sub{color:var(--gold)}}
+nav.toc{margin:4px 0 14px;padding:10px 12px;background:var(--zebra);border:1px solid var(--line);border-radius:8px}
+nav.toc a{font-size:13px;padding:3px 10px}
+.wl ul{margin:4px 0 10px;padding-left:22px}
+.wl ul ul{margin:2px 0 4px}
+.wl li{margin:2px 0}
+.wl li::marker{color:var(--gold)}
+dl.wd{margin:6px 0 10px}
+dl.wd dt{font-weight:700;margin-top:6px}
+dl.wd dd{margin:0 0 0 18px}
