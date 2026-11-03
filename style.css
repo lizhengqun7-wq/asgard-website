@@ -26,11 +26,22 @@ header{position:sticky;top:0;z-index:3;display:flex;gap:14px;align-items:center;
 .sf{flex:1;min-width:180px;max-width:380px;margin-left:auto}
 .sf input,.hs input{width:100%;padding:8px 12px;border-radius:20px;border:1px solid #8a6438;background:#fff8e8;color:#2b1d12;font-size:15px}
 .sf input:focus,.hs input:focus{outline:2px solid var(--gold);outline-offset:1px}
-.cats{position:sticky;top:56px;z-index:2;display:flex;gap:6px;overflow-x:auto;padding:8px 16px;
-  background:var(--card);border-bottom:1px solid var(--line);white-space:nowrap;scrollbar-width:thin}
-.cats a{flex:none;padding:3px 12px;border:1px solid var(--line);border-radius:14px;font-size:14px;text-decoration:none;color:var(--fg);background:var(--bg)}
-.cats a:hover{border-color:var(--gold);color:var(--acc)}
-.cats a.on{background:var(--acc);border-color:var(--acc);color:#fff8ea}
+.cats{position:sticky;top:56px;z-index:4;display:flex;flex-wrap:wrap;gap:6px;padding:8px 16px;
+  background:var(--card);border-bottom:1px solid var(--line)}
+.cats details{position:relative}
+.cats summary{list-style:none;cursor:pointer;padding:4px 14px;border:1px solid var(--line);border-radius:14px;font-size:14px;
+  color:var(--fg);background:var(--bg);user-select:none}
+.cats summary::-webkit-details-marker{display:none}
+.cats summary::after{content:"▾";margin-left:5px;font-size:11px;color:var(--mut)}
+.cats summary:hover,.cats details[open] summary{border-color:var(--gold);color:var(--acc)}
+.cats details.on summary{background:var(--acc);border-color:var(--acc);color:#fff8ea}
+.cats details.on summary::after{color:#fff8ea}
+.cats .pane{position:absolute;left:0;top:calc(100% + 4px);min-width:180px;display:flex;flex-direction:column;padding:6px;
+  background:var(--card);border:1px solid var(--line);border-radius:10px;box-shadow:0 8px 24px rgba(0,0,0,.18)}
+.cats details:nth-last-child(-n+2) .pane{left:auto;right:0}
+.cats .pane a{padding:7px 12px;border-radius:7px;font-size:14px;text-decoration:none;color:var(--fg);white-space:nowrap}
+.cats .pane a:hover{background:var(--bg);color:var(--acc)}
+.cats .pane a.on{background:var(--acc);color:#fff8ea}
 
 main{max-width:1140px;margin:0 auto;padding:18px 16px}
 h1{font-size:28px;line-height:1.3;margin:4px 0;color:var(--fg)}
