@@ -225,3 +225,5 @@ table.q.dq td:first-child,table.q.dq td:has(>img.ic){white-space:normal}
 .dch img.ic{max-width:24px;max-height:24px}
 .dch .more{color:var(--mut);font-size:12px}
 @media(max-width:520px){.mcs{grid-template-columns:1fr}}
+.en{color:#c46a00}
+.ent{margin-left:4px;font-size:11px;color:#fff;background:#c46a00;border-radius:4px;padding:0 4px}
