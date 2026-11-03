@@ -227,3 +227,16 @@ table.q.dq td:first-child,table.q.dq td:has(>img.ic){white-space:normal}
 @media(max-width:520px){.mcs{grid-template-columns:1fr}}
 .en{color:#c46a00}
 .ent{margin-left:4px;font-size:11px;color:#fff;background:#c46a00;border-radius:4px;padding:0 4px}
+
+/* 依地圖看怪物：一張地圖一張卡片，怪物一隻一列 */
+.mapc{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 10px}
+.mapc .mh{display:flex;justify-content:space-between;align-items:baseline;gap:8px;flex-wrap:wrap}
+.mapc .mh b{font-size:16px}
+.mapc .mh em{font-style:normal;color:var(--mut);font-size:13px}
+.mshot summary{cursor:pointer;color:var(--mut);font-size:13px;margin:2px 0}
+.mshot img{width:100%;max-width:480px;height:auto;display:block;margin:4px 0}
+ul.mlist{list-style:none;margin:4px 0 0;padding:0}
+ul.mlist>li{border-top:1px dashed var(--line);padding:4px 0}
+ul.mlist .mch{margin:0}
+ul.mlist .mch b{font-size:14px}
+ul.mlist .dch{font-size:13px;margin-left:4px}
