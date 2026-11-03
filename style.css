@@ -193,3 +193,6 @@ dl.wd{margin:6px 0 10px}
 dl.wd dt{font-weight:700;margin-top:6px}
 dl.wd dd{margin:0 0 0 18px}
 img.ic.wimg{width:auto;height:auto;max-width:56px;max-height:56px;background:none;border:0}
+a.kid{font-weight:700}
+.ksum{display:block;font-size:13px;color:var(--mut);margin:0 0 2px;line-height:1.5}
+img.ic.same{opacity:.85}
