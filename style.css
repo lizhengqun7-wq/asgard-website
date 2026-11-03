@@ -248,3 +248,13 @@ nav.areanav a,nav.areanav span{padding:2px 8px;border-radius:6px;background:var(
 nav.areanav a.cur{background:#7a2a14;color:#fff}
 nav.areanav .fl b{margin-right:4px;font-size:14px}
 nav.areanav .fl a{min-width:1.6em;text-align:center}
+
+/* 地圖頁的怪物數值：卡片 */
+.mstat{background:var(--card);border:1px solid var(--line);border-radius:10px;padding:8px 10px;margin:6px 0 12px}
+.mstat .msn{font-weight:700;margin-bottom:4px}
+.mstat dl{display:grid;grid-template-columns:repeat(auto-fill,minmax(84px,1fr));gap:4px;margin:0}
+.mstat dl>div{background:var(--bg2);border-radius:6px;padding:3px 6px}
+.mstat dt{font-size:11px;color:var(--mut)}
+.mstat dd{margin:0;font-weight:700;font-size:14px}
+.mstat .msd{margin-top:6px;font-size:14px}
+.mstat .msd em{font-style:normal;color:var(--mut);font-size:12px;display:block;margin-bottom:2px}
