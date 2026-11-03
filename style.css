@@ -196,3 +196,16 @@ img.ic.wimg{width:auto;height:auto;max-width:56px;max-height:56px;background:non
 a.kid{font-weight:700}
 .ksum{display:block;font-size:13px;color:var(--mut);margin:0 0 2px;line-height:1.5}
 img.ic.same{opacity:.85}
+
+/* 掉落物品查詢：每隻怪一行，小字＝掉落地點 */
+ul.dm{list-style:none;margin:0;padding:0}
+ul.dm li{display:flex;align-items:center;flex-wrap:wrap;gap:4px;padding:2px 0;border-bottom:1px dashed var(--line,#e3d6bd)}
+ul.dm li:last-child{border-bottom:0}
+ul.dm li small.src{color:var(--mut);font-size:12px;margin-left:4px}
+ul.dm li.more{color:var(--mut);font-size:12px}
+table.dq{table-layout:fixed;width:100%}
+table.dq td:first-child{width:36%;word-break:break-all}
+table.dq td{white-space:normal;vertical-align:top}
+table.dq td:first-child b{display:inline}
+ul.dm li img.ic{max-width:36px;max-height:36px}
+table.q.dq td:first-child,table.q.dq td:has(>img.ic){white-space:normal}
