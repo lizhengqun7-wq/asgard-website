@@ -168,6 +168,12 @@ footer{max-width:1140px;margin:30px auto 0;padding:16px;color:var(--mut);font-si
   .hero{min-height:300px}.hero h1{font-size:32px}.hero-in{padding:20px}
   .world{grid-template-columns:1fr}
   h1{font-size:23px}
+  /* 手機：分類選單改成整條橫跨畫面（左右各留 16px），放在分類列正下方；項目多時在選單裡上下捲動 */
+  .cats details{position:static}
+  .cats details[open]::after{display:none}
+  .cats .pane,.cats details:nth-last-child(-n+2) .pane{left:16px;right:16px;top:calc(100% + 4px);min-width:0;z-index:5;
+    max-height:calc(100vh - 260px);max-height:calc(100dvh - 260px);overflow-y:auto;-webkit-overflow-scrolling:touch;overscroll-behavior:contain}
+  .cats .pane a{white-space:normal;padding:10px 12px;font-size:15px}
 }
 /* 怪物數值表補上的值：虛線底＝取自日版 wiki 別頁 */
 span.fw{border-bottom:1px dashed currentColor}
